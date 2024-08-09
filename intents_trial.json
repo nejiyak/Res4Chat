@@ -1,0 +1,554 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "pairs": [
+                {
+                    "pattern": "hi",
+                    "response": "Hello! How can I assist you?"
+                },
+                {
+                    "pattern": "Hi",
+                    "response": "Hello! How can I assist you?"
+                },
+                {
+                    "pattern": "Hey",
+                    "response": "Hello! How can I assist you?"
+                },
+                {
+                    "pattern": "How are you",
+                    "response": "I'm good, hope the same from you!"
+                },
+                {
+                    "pattern": "Is anyone there?",
+                    "response": "Hello! I'm ResChat. How can I assist you?"
+                },
+                {
+                    "pattern": "Helo",
+                    "response": "Hey there! How can I assist you?"
+                },
+                {
+                    "pattern": "Yes",
+                    "response": " How can I assist you?"
+                },
+                {
+                    "pattern": "Thank you",
+                    "response": "How can I assist you?"
+                },
+                {
+                    "pattern": "Good day",
+                    "response": "Hello! Good day to you too. How can I assist you?"
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "course_info",
+            "pairs": [
+                {
+                    "pattern": "Tell me about micro-credential courses",
+                    "response": "Micro-credential courses are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
+                },
+                {
+                    "pattern": "Skills",
+                    "response": "Energy Systems Basics, Renewable Energies, Sustainable Finance, Data Analytics for Energy, Energy-Efficient Building, Decarbonisation Tools, Energy Utilisation & Storage, Energy Transition Strategies, Social Acceptance of Tech, Circular Economy Principles Micro-credential courses are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
+                },
+               
+                {
+                    "pattern": "What are micro-credentials?",
+                    "response": "Micro-credential courses are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
+                },
+                {
+                    "pattern": "Give me details about the courses offered",
+                    "response": "We offer micro-credential courses which are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
+                },
+                {
+                    "pattern": "what courses are available?",
+                    "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
+                },
+                {
+                    "pattern": "courses",
+                    "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
+                },
+                {
+                    "pattern": "give me course information",
+                    "response": "RES4CITY offers various micro-credential courses focused on renewable energy and sustainability. The courses cover a range of topics including energy efficiency, green technologies, and sustainable practices."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "course_selection",
+            "pairs": [
+                {
+                    "pattern": "Which course should I take?",
+                    "response": "To choose the right course, consider your current skill level, career aspirations, and the specific needs of the job market in your area. The self-assessment tool on the RES4CITY <a href='https://www.res4city.eu/self-assessment/'>website</a> can assist you in making this decision by matching your profile with the most suitable micro-credentials or micro-programs."
+                },
+                {
+                    "pattern": "Which course?",
+                    "response": "To choose the right course, consider your current skill level, career aspirations, and the specific needs of the job market in your area. The self-assessment tool on the RES4CITY <a href='https://www.res4city.eu/self-assessment/'>website</a> can assist you in making this decision by matching your profile with the most suitable micro-credentials or micro-programs."
+                },
+                {
+                    "pattern": "Help me choose a course",
+                    "response": "To choose the right course, consider your current skill level, career aspirations, and the specific needs of the job market in your area. The self-assessment tool on the RES4CITY <a href='https://www.res4city.eu/self-assessment/'>website</a> can assist you in making this decision by matching your profile with the most suitable micro-credentials or micro-programs."
+                },
+                {
+                    "pattern": "Which course is best for getting a job in field of sustainability?",
+                    "response": "To choose the right course, consider your current skill level, career aspirations, and the specific needs of the job market in your area. The self-assessment tool on the RES4CITY <a href='https://www.res4city.eu/self-assessment/'>website</a> can assist you in making this decision by matching your profile with the most suitable micro-credentials or micro-programs."
+                },
+                {
+                    "pattern": "Which course is best?",
+                    "response": "To choose the right course, consider your current skill level, career aspirations, and the specific needs of the job market in your area. The self-assessment tool on the RES4CITY <a href='https://www.res4city.eu/self-assessment/'>website</a> can assist you in making this decision by matching your profile with the most suitable micro-credentials or micro-programs."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "job_assistance",
+            "pairs": [
+        {
+            "pattern": "How can these courses help me get a job?",
+            "response": "RES4CITY courses provide you with essential skills in renewable energy and sustainability, increasing your employability in the green job market. They also offer networking opportunities and support in applying for European funding."
+        },
+        {
+            "pattern": "what job",
+            "response": "RES4CITY courses provide you with essential skills in renewable energy and sustainability, increasing your employability in the green job market. They also offer networking opportunities and support in applying for European funding."
+        },
+        {
+            "pattern": "job prospects",
+            "response": "RES4CITY courses provide you with essential skills in renewable energy and sustainability, increasing your employability in the green job market. They also offer networking opportunities and support in applying for European funding."
+        },
+        {
+            "pattern": "Will this course improve my job prospects?",
+            "response": "Yes, RES4CITY courses are tailored to meet the demands of the sustainability sector, equipping you with up-to-date knowledge and skills to enhance your job prospects."
+        },
+        {
+            "pattern": "Employability",
+            "response": "RES4CITY courses provide you with essential skills in renewable energy and sustainability, increasing your employability in the green job market. They also offer networking opportunities and support in applying for European funding."
+        },
+        {
+            "pattern": "What jobs can I get with this course?",
+            "response": "With RES4CITY courses, you can pursue roles such as renewable energy specialist, sustainability consultant, energy efficiency expert, and other positions in the green energy sector."
+        }                
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "enrollment",
+            "pairs": [
+                {
+                    "pattern": "How do I enroll in a course?",
+                    "response": "To enroll in a course, visit the RES4CITY website <a href='https://www.res4city.eu/self-assessment/'>website</a>. There, you can find a self-assessment tool to identify the most suitable courses and then you can begin your enrollment process."
+                },
+                {
+                    "pattern": "Enroll",
+                    "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
+                },
+                {
+                    "pattern": "What is the enrollment process?",
+                    "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
+                },
+                {
+                    "pattern": "Can you guide me through the registration?",
+                    "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
+                },
+                {
+                    "pattern": "registration?",
+                    "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
+                }
+            ],
+            "context_set": ""
+        },
+       
+        {
+            "tag": "job_market_alignment",
+            "pairs": [
+                {
+                    "pattern": "How do your courses help me get a job?",
+                    "response": "Our courses are designed in collaboration with industry experts to ensure that the skills you acquire are highly relevant to current job market demands. Many of our graduates have successfully transitioned to roles in renewable energy companies and sustainability consultancies."
+                },
+                {
+                    "pattern": "Will these courses improve my employability?",
+                    "response": "Absolutely. The skills you gain from our courses are in high demand. We also provide certificates that can enhance your resume and improve your job prospects."
+                },
+                {
+                    "pattern": "Can I find a job after completing your courses?",
+                    "response": "Yes, we offer career guidance and job matching services to help you transition from education to employment seamlessly."
+                },
+                {
+                    "pattern": "job placement?",
+                    "response": "Yes, we offer career guidance and job matching services to help you transition from education to employment seamlessly. We also have partnerships with several companies in the green energy sector."
+                },
+                {
+                    "pattern": "Do you have any job placement assistance?",
+                    "response": "Yes, we offer career guidance and job matching services to help you transition from education to employment seamlessly. We also have partnerships with several companies in the green energy sector."
+                },
+                {
+                    "pattern": "What kind of jobs can I get with your courses?",
+                    "response": "Yes, the skills taught in our courses are highly sought after in the job market. Renewable energy and sustainability are rapidly growing fields, and employers are looking for qualified candidates with these skills."
+                },
+                {
+                    "pattern": "Are the skills from these courses in demand?",
+                    "response": "Yes, the skills taught in our courses are highly sought after in the job market. Renewable energy and sustainability are rapidly growing fields, and employers are looking for qualified candidates with these skills."
+                },
+                {
+                    "pattern": "Can you match my skills with job opportunities?",
+                    "response": "Yes, the skills taught in our courses are highly sought after in the job market. Renewable energy and sustainability are rapidly growing fields, and employers are looking for qualified candidates with these skills."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "renewable_energy_engineer",
+            "pairs": [
+                {
+                    "pattern": "How can I become a Renewable Energy Engineer?",
+                    "response": "To become a Renewable Energy Engineer, you'll need a strong foundation in sustainable energy technologies, which you can gain through our 'Sustainable Energy Technologies and Strategies in Urban Environment' course."
+                },
+                {
+                    "pattern": "What skills do I need for a Renewable Energy Engineer role?",
+                    "response": "Key skills for a Renewable Energy Engineer include knowledge of renewable energy systems, project management, and technical expertise in energy technologies."
+                },
+                {
+                    "pattern": "skills for a Renewable Energy Engineer role?",
+                    "response": "Key skills for a Renewable Energy Engineer include knowledge of renewable energy systems, project management, and technical expertise in energy technologies."
+                },
+                {
+                    "pattern": "Which courses should I take to become a Renewable Energy Engineer?",
+                    "response": "You should consider taking courses like 'Sustainable Energy Technologies and Strategies in Urban Environment' and 'Advanced Design of Sustainable Cities' to build the necessary skills."
+                },
+                {
+                    "pattern": "courses/course for Renewable Energy Engineer?",
+                    "response": "You should consider taking courses like 'Sustainable Energy Technologies and Strategies in Urban Environment' and 'Advanced Design of Sustainable Cities' to build the necessary skills."
+                },
+                {
+                    "pattern": "What job opportunities are available for Renewable Energy Engineers?",
+                    "response": "Renewable Energy Engineers can work in designing, implementing, and maintaining renewable energy systems in urban environments, often collaborating with city planners and sustainability consultants."
+                },
+                {
+                    "pattern": "What does a Renewable Energy Engineer do?",
+                    "response": "A Renewable Energy Engineer designs, develops, and manages renewable energy projects such as solar, wind, and geothermal systems to provide sustainable energy solutions."
+                },
+                {
+                    "pattern": "Are there any online courses for Renewable Energy Engineers?",
+                    "response": "Yes, we offer online courses such as 'Sustainable Energy Technologies and Strategies in Urban Environment' which can be completed remotely."
+                },
+                {
+                    "pattern": "Where can I find job opportunities for Renewable Energy Engineers?",
+                    "response": "We have a designated dashboard for mapping your green skills with job roles all over Europe and Switzerland. This tool helps you find the best job opportunities in the renewable energy sector."
+                }
+            ],
+            "context_set":""
+        },
+        {
+            "tag": "sustainability_coordinator",
+            "pairs": [
+                {
+                    "pattern": "How can I become a Sustainability Coordinator?",
+                    "response": "To become a Sustainability Coordinator, you should focus on our 'Decarbonization Strategies and Social Innovation for Cities and Communities' course. This course provides comprehensive training on sustainability practices and strategies."
+                },
+                {
+                    "pattern": "What skills are required for a Sustainability Coordinator?",
+                    "response": "A Sustainability Coordinator needs skills in environmental management, social innovation, policy development, and project management. These skills are essential for developing and implementing sustainability initiatives."
+                },
+                {
+                    "pattern": "skills Sustainability Coordinator?",
+                    "response": "A Sustainability Coordinator needs skills in environmental management, social innovation, policy development, and project management. These skills are essential for developing and implementing sustainability initiatives."
+                },
+                {
+                    "pattern": "What does a Sustainability Coordinator do?",
+                    "response": "Sustainability Coordinators develop and implement sustainability initiatives, monitor environmental impact, and promote sustainable practices within organizations. They work to ensure compliance with environmental regulations and engage stakeholders in sustainability efforts."
+                },
+                {
+                    "pattern": "Which micro-credential will help me become a Sustainability Coordinator?",
+                    "response": "Our 'Decarbonization Strategies and Social Innovation for Cities and Communities' course equips you with the necessary skills to excel as a Sustainability Coordinator. It covers key areas such as sustainable development, environmental policy, and social innovation."
+                },
+                {
+                    "pattern": "Tell me about the role of a Sustainability Coordinator.",
+                    "response": "As a Sustainability Coordinator, you will be responsible for driving sustainability projects, engaging stakeholders, and ensuring compliance with environmental regulations. Your role involves developing strategies to reduce environmental impact and promoting sustainable practices within the organization."
+                },
+                {
+                    "pattern": "Where can I find job opportunities for Sustainability Coordinator?",
+                    "response": "We have a designated dashboard for mapping your green skills with job roles all over Europe and Switzerland. This tool helps you find the best job opportunities in the sustainablity."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "urban_designer",
+            "pairs": [
+                {
+                    "pattern": "How do I become an Urban Designer?",
+                    "response": "To become an Urban Designer, consider enrolling in our 'Advanced Design of Sustainable Cities' course. This course covers the principles and practices of sustainable urban design."
+                },
+                {
+                    "pattern": "What are the responsibilities of an Urban Designer?",
+                    "response": "Urban Designers plan and design urban spaces, focusing on sustainability, aesthetics, and functionality. They work on projects such as public spaces, residential areas, and commercial developments."
+                },
+                {
+                    "pattern": "Which course should I take to become an Urban Designer?",
+                    "response": "Our 'Advanced Design of Sustainable Cities' course provides the expertise needed to succeed as an Urban Designer. It includes modules on urban planning, sustainable design, and community engagement."
+                },
+                {
+                    "pattern": "What skills are needed for an Urban Designer?",
+                    "response": "Key skills for an Urban Designer include urban planning, design principles, sustainable development, and knowledge of environmental impact assessment. These skills help create functional and attractive urban environments."
+                },
+                {
+                    "pattern": "Tell me about careers in urban design.",
+                    "response": "Urban Designers are responsible for creating functional, attractive, and sustainable urban environments. They collaborate with architects, planners, and stakeholders to develop urban spaces that meet the needs of communities."
+                },
+                {
+                    "pattern": "Where can I find job opportunities for Urban Designer?",
+                    "response": "We have a designated dashboard for mapping your green skills with job roles all over Europe and Switzerland. This tool helps you find the best job opportunities in  Urban Designing."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "sustainable_business_consultant",
+            "pairs": [
+                {
+                    "pattern": "How can I become a Sustainable Business Consultant?",
+                    "response": "To become a Sustainable Business Consultant, our 'Business Strategies for a Sustainable Urban Transition' course is highly recommended. This course focuses on integrating sustainability into business practices."
+                },
+                {
+                    "pattern": "What skills are essential for a Sustainable Business Consultant?",
+                    "response": "A Sustainable Business Consultant needs skills in sustainability, business strategy, stakeholder engagement, and project management. These skills are essential for advising organizations on sustainable practices."
+                },
+                {
+                    "pattern": "What does a Sustainable Business Consultant do?",
+                    "response": "Sustainable Business Consultants advise organizations on integrating sustainability into their business practices and strategies. They help businesses develop and implement sustainable strategies that reduce environmental impact while maintaining profitability."
+                },
+                {
+                    "pattern": "Which micro-credential will help me become a Sustainable Business Consultant?",
+                    "response": "Our 'Business Strategies for a Sustainable Urban Transition' course equips you with the knowledge needed for a career in sustainable business consulting. It covers areas such as sustainable business models, environmental impact assessment, and stakeholder engagement."
+                },
+                {
+                    "pattern": "Tell me about careers in sustainable business consulting.",
+                    "response": "As a Sustainable Business Consultant, you will help businesses develop and implement sustainable strategies, reducing their environmental impact while maintaining profitability. Your role involves conducting sustainability assessments, advising on best practices, and engaging stakeholders in sustainability efforts."
+                },
+                {
+                    "pattern": "Where can I find job opportunities for sustainable business consulting.?",
+                    "response": "We have a designated dashboard for mapping your green skills with job roles all over Europe and Switzerland. This tool helps you find the best job opportunities in sustainable business consulting."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "resilient_design_architect",
+            "pairs": [
+                {
+                    "pattern": "How can I become a Resilient Design Architect?",
+                    "response": "To become a Resilient Design Architect, our 'Sustainability by Design: Developing a Resilient Built Environment' course is ideal. This course focuses on creating buildings and structures that can withstand environmental challenges."
+                },
+                {
+                    "pattern": "What are the responsibilities of a Resilient Design Architect?",
+                    "response": "Resilient Design Architects focus on creating buildings and structures that can withstand environmental challenges and remain functional. They work on designing structures that are sustainable, durable, and adaptable to changing environmental conditions."
+                },
+                {
+                    "pattern": "Which course should I take to become a Resilient Design Architect?",
+                    "response": "Our 'Sustainability by Design: Developing a Resilient Built Environment' course provides the expertise needed for a career in resilient design architecture. It includes modules on sustainable design principles, resilience planning, and green building practices."
+                },
+                {
+                    "pattern": "What skills are necessary for a Resilient Design Architect?",
+                    "response": "Essential skills for a Resilient Design Architect include sustainable design, resilience planning, knowledge of green building practices, and environmental impact assessment. These skills are crucial for creating resilient built environments."
+                },
+                {
+                    "pattern": "Tell me about careers in resilient design architecture.",
+                    "response": "As a Resilient Design Architect, you will design buildings that are sustainable, durable, and capable of adapting to environmental changes. Your role involves integrating resilience into design processes and ensuring that structures can withstand various environmental challenges."
+                },
+                {
+                    "pattern": "Where can I find job opportunities for Design Architect?",
+                    "response": "We have a designated dashboard for mapping your green skills with job roles all over Europe and Switzerland. This tool helps you find the best job opportunities in Design Architecture."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "energy_innovation_manager",
+            "pairs": [
+                {
+                    "pattern": "How do I become an Energy Innovation Manager?",
+                    "response": "To become an Energy Innovation Manager, consider our 'Innovation in the Urban Energy Sector: Strategies & Management' course. This course covers innovative solutions for energy efficiency and sustainability in urban areas."
+                },
+                {
+                    "pattern": "What are the responsibilities of an Energy Innovation Manager?",
+                    "response": "Energy Innovation Managers develop and implement innovative solutions for energy efficiency and sustainability in urban areas. They work on projects that enhance energy efficiency, integrate renewable energy sources, and promote sustainable urban energy practices."
+                },
+                {
+                    "pattern": "Which course should I take to become an Energy Innovation Manager?",
+                    "response": "Our 'Innovation in the Urban Energy Sector: Strategies & Management' course equips you with the knowledge needed to excel as an Energy Innovation Manager. It includes modules on energy management, innovation strategies, and renewable energy integration."
+                },
+                {
+                    "pattern": "What skills are needed for an Energy Innovation Manager?",
+                    "response": "Key skills for an Energy Innovation Manager include energy management, innovation strategies, project leadership, and knowledge of renewable energy technologies. These skills are essential for leading energy innovation projects."
+                },
+                {
+                    "pattern": "Tell me about careers in energy innovation management.",
+                    "response": "As an Energy Innovation Manager, you will lead projects that enhance energy efficiency, integrate renewable energy sources, and promote sustainable urban energy practices. Your role involves developing and implementing innovative energy solutions and collaborating with stakeholders to drive energy sustainability."
+                },
+                {
+                    "pattern": "Where can I find job opportunities for Energy Innovation Manager?",
+                    "response": "We have a designated dashboard for mapping your green skills with job roles all over Europe and Switzerland. This tool helps you find the best job opportunities inEnergy Innovation Manager."
+                }
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "sustainable_energy_technologies",
+            "pairs": [
+                {
+                    "pattern": "Tell me about the Sustainable Energy Technologies programme",
+                    "response": "The 'Sustainable Energy Technologies and Strategies in Urban Environment' programme covers renewable energy systems, energy efficiency, and sustainable urban planning. It equips you with the skills needed to design, implement, and manage sustainable energy solutions."
+                },
+                {
+                    "pattern": "What will I learn in the Sustainable Energy Technologies course?",
+                    "response": "In this course, you will learn about different types of renewable energy technologies, energy policy, and how to integrate sustainable energy solutions into urban environments."
+                },
+                {
+                    "pattern": "How can this course help me in my career?",
+                    "response": "Completing this programme can open up career opportunities as a Renewable Energy Engineer, Energy Consultant, or Sustainable Energy Manager."
+                },
+                {
+                    "pattern": "What jobs can I get after completing the Sustainable Energy Technologies programme?",
+                    "response": "After completing this programme, you can pursue roles such as Renewable Energy Engineer, Energy Consultant, and Sustainable Energy Manager."
+                },
+                {
+                    "pattern": "What is covered in the Sustainable Energy Technologies and Strategies in Urban Environment course?",
+                    "response": "This course includes modules on solar and wind energy technologies, energy storage systems, and strategies for reducing urban energy consumption."
+                }
+            ],
+            "context_set": ""
+        },
+      {
+        "tag": "decarbonization_strategies",
+        "pairs": [
+            {
+                "pattern": "Tell me about the Decarbonization Strategies programme",
+                "response": "The 'Decarbonization Strategies and Social Innovation for Cities and Communities' programme focuses on strategies to reduce carbon emissions and promote social innovation. You will learn about policy development, community engagement, and sustainable urban planning."
+            },
+            {
+                "pattern": "What will I learn in the Decarbonization Strategies course?",
+                "response": "This course covers topics such as climate change mitigation, renewable energy integration, and social innovation techniques."
+            },
+            {
+                "pattern": "How can this course help me in my career?",
+                "response": "After completing this programme, you could pursue roles such as Sustainability Coordinator, Environmental Policy Advisor, or Urban Planner."
+            },
+            {
+                "pattern": "What jobs can I get after completing the Decarbonization Strategies programme?",
+                "response": "Career opportunities include roles such as Sustainability Coordinator, Environmental Policy Advisor, and Urban Planner."
+            },
+            {
+                "pattern": "What is covered in the Decarbonization Strategies and Social Innovation for Cities and Communities course?",
+                "response": "Modules include carbon footprint analysis, community-led sustainability projects, and innovative solutions for urban decarbonization."
+            }
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "advanced_design_cities",
+        "pairs": [
+            {
+                "pattern": "Tell me about the Advanced Design of Sustainable Cities programme",
+                "response": "The 'Advanced Design of Sustainable Cities' programme teaches you how to create urban spaces that are environmentally sustainable and socially inclusive. You'll learn about urban design principles, sustainable architecture, and green infrastructure."
+            },
+            {
+                "pattern": "What will I learn in the Advanced Design of Sustainable Cities course?",
+                "response": "This course includes modules on sustainable urban planning, landscape architecture, and the use of green technologies in city design."
+            },
+            {
+                "pattern": "How can this course help me in my career?",
+                "response": "Career opportunities after completing this programme include Urban Designer, City Planner, and Sustainability Consultant."
+            },
+            {
+                "pattern": "What jobs can I get after completing the Advanced Design of Sustainable Cities programme?",
+                "response": "After completing this programme, you could work as an Urban Designer, City Planner, or Sustainability Consultant."
+            },
+            {
+                "pattern": "What is covered in the Advanced Design of Sustainable Cities course?",
+                "response": "You will study topics such as eco-friendly building materials, urban biodiversity, and strategies for creating livable, resilient urban environments."
+            }
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "business_strategies",
+        "pairs": [
+            {
+                "pattern": "Tell me about the Business Strategies for a Sustainable Urban Transition programme",
+                "response": "The 'Business Strategies for a Sustainable Urban Transition' programme focuses on integrating sustainability into business practices. You will learn about sustainable business models, corporate social responsibility, and green marketing."
+            },
+            {
+                "pattern": "What will I learn in the Business Strategies course?",
+                "response": "This course covers topics such as sustainable supply chain management, environmental risk assessment, and stakeholder engagement."
+            },
+            {
+                "pattern": "How can this course help me in my career?",
+                "response": "After completing this programme, you could work as a Sustainable Business Consultant, Corporate Sustainability Manager, or Green Business Advisor."
+            },
+            {
+                "pattern": "What jobs can I get after completing the Business Strategies programme?",
+                "response": "Career opportunities include roles such as Sustainable Business Consultant, Corporate Sustainability Manager, and Green Business Advisor."
+            },
+            {
+                "pattern": "What is covered in the Business Strategies for a Sustainable Urban Transition course?",
+                "response": "Modules include case studies on successful sustainable businesses, strategies for reducing corporate carbon footprints, and tools for measuring sustainability performance."
+            }
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "sustainability_by_design",
+        "pairs": [
+            {
+                "pattern": "Tell me about the Sustainability by Design programme",
+                "response": "The 'Sustainability by Design: Developing a Resilient Built Environment' programme focuses on creating buildings and infrastructure that can withstand environmental challenges. You will learn about resilient design principles, sustainable construction practices, and disaster risk reduction."
+            },
+            {
+                "pattern": "What will I learn in the Sustainability by Design course?",
+                "response": "This course includes modules on climate-resilient architecture, green building standards, and adaptive reuse of existing structures."
+            },
+            {
+                "pattern": "How can this course help me in my career?",
+                "response": "Career opportunities include Resilient Design Architect, Sustainable Building Consultant, and Disaster Risk Reduction Specialist."
+            },
+            {
+                "pattern": "What jobs can I get after completing the Sustainability by Design programme?",
+                "response": "After completing this programme, you could pursue roles such as Resilient Design Architect, Sustainable Building Consultant, and Disaster Risk Reduction Specialist."
+            },
+            {
+                "pattern": "What is covered in the Sustainability by Design: Developing a Resilient Built Environment course?",
+                "response": "You will study topics such as sustainable urban drainage systems, energy-efficient building design, and strategies for enhancing the resilience of urban infrastructure."
+            }
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "urban_energy_innovation",
+        "pairs": [
+            {
+                "pattern": "Tell me about the Innovation in the Urban Energy Sector programme",
+                "response": "The 'Innovation in the Urban Energy Sector: Strategies & Management' programme teaches you how to develop and manage innovative energy solutions for urban areas. You'll learn about energy management systems, renewable energy integration, and smart grid technologies."
+            },
+            {
+                "pattern": "What will I learn in the Urban Energy Innovation course?",
+                "response": "This course covers topics such as urban energy planning, innovation strategies for energy efficiency, and leadership in energy projects."
+            },
+            {
+                "pattern": "How can this course help me in my career?",
+                "response": "After completing this programme, you could pursue roles such as Energy Innovation Manager, Urban Energy Planner, or Renewable Energy Project Leader."
+            },
+            {
+                "pattern": "What jobs can I get after completing the Urban Energy Innovation programme?",
+                "response": "Career opportunities include Energy Innovation Manager, Urban Energy Planner, and Renewable Energy Project Leader."
+            },
+            {
+                "pattern": "What is covered in the Innovation in the Urban Energy Sector: Strategies & Management course?",
+                "response": "Modules include smart grid technology, renewable energy project management, and strategies for enhancing energy efficiency in urban environments."
+            }
+        ],
+        "context_set": ""
+    }
+]
+}
