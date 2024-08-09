@@ -8,6 +8,10 @@
                     "response": "Hello! How can I assist you?"
                 },
                 {
+                    "pattern": "sorry",
+                    "response": "It's ok"
+                },
+                {
                     "pattern": "Hi",
                     "response": "Hello! How can I assist you?"
                 },
