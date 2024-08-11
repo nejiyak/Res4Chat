@@ -9,10 +9,22 @@
                 },
                 {
                     "pattern": "sorry",
-                    "response": "It's ok"
+                    "response": "Alright, How can I help you?"
                 },
                 {
                     "pattern": "Hi",
+                    "response": "Hello! How can I assist you?"
+                },
+                {
+                    "pattern": "Hi boss",
+                    "response": "Hello! How can I assist you?"
+                },
+                {
+                    "pattern": "Hi madam",
+                    "response": "Hello! How can I assist you?"
+                },
+                {
+                    "pattern": "Hi Sir",
                     "response": "Hello! How can I assist you?"
                 },
                 {
@@ -77,6 +89,18 @@
                 {
                     "pattern": "give me course information",
                     "response": "RES4CITY offers various micro-credential courses focused on renewable energy and sustainability. The courses cover a range of topics including energy efficiency, green technologies, and sustainable practices."
+                },
+                {
+                    "pattern": "Res4City",
+                    "response": "RES4CITY offers various micro-credential courses focused on renewable energy and sustainability. The courses cover a range of topics including energy efficiency, green technologies, and sustainable practices."
+                },
+                {
+                    "pattern": "Benefits of Res4City course",
+                    "response": "RES4CITY courses help you develop expertise in sustainable energy and decarbonization, boost your resume with recognized credentials, offer networking opportunities with industry professionals, and provide engaging learning through interactive tools like MOOCs and serious games. How can I assist you further?"
+                },
+                {
+                    "pattern": "Res4Chat",
+                    "response": "RES4Chat: Your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
                 }
             ],
             "context_set": ""
@@ -481,6 +505,10 @@
         "pairs": [
             {
                 "pattern": "Tell me about the Business Strategies for a Sustainable Urban Transition programme",
+                "response": "The 'Business Strategies for a Sustainable Urban Transition' programme focuses on integrating sustainability into business practices. You will learn about sustainable business models, corporate social responsibility, and green marketing."
+            },
+            {
+                "pattern": "Tell me about the Business Strategy for a Sustainable Urban Transition programme",
                 "response": "The 'Business Strategies for a Sustainable Urban Transition' programme focuses on integrating sustainability into business practices. You will learn about sustainable business models, corporate social responsibility, and green marketing."
             },
             {
