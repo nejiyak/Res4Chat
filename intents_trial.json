@@ -100,7 +100,7 @@
                 },
                 {
                     "pattern": "Res4Chat",
-                    "response": "RES4Chat: Your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
+                    "response": "Your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
                 }
             ],
             "context_set": ""
@@ -508,7 +508,7 @@
                 "response": "The 'Business Strategies for a Sustainable Urban Transition' programme focuses on integrating sustainability into business practices. You will learn about sustainable business models, corporate social responsibility, and green marketing."
             },
             {
-                "pattern": "Tell me about the Business Strategy for a Sustainable Urban Transition programme",
+                "pattern": "Business Strategy for a Sustainable Urban Transition programme",
                 "response": "The 'Business Strategies for a Sustainable Urban Transition' programme focuses on integrating sustainability into business practices. You will learn about sustainable business models, corporate social responsibility, and green marketing."
             },
             {
