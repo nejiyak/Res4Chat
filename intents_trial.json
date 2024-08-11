@@ -515,6 +515,10 @@
                 "pattern": "What will I learn in the Business Strategies course?",
                 "response": "This course covers topics such as sustainable supply chain management, environmental risk assessment, and stakeholder engagement."
             },
+             {
+                "pattern": "What will I learn in the Business Strategy course?",
+                "response": "This course covers topics such as sustainable supply chain management, environmental risk assessment, and stakeholder engagement."
+            },
             {
                 "pattern": "How can this course help me in my career?",
                 "response": "After completing this programme, you could work as a Sustainable Business Consultant, Corporate Sustainability Manager, or Green Business Advisor."
