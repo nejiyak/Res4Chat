@@ -95,6 +95,10 @@
                     "response": "Energy Systems Basics, Renewable Energies, Sustainable Finance, Data Analytics for Energy, Energy-Efficient Building, Decarbonisation Tools, Energy Utilisation & Storage, Energy Transition Strategies, Social Acceptance of Tech, Circular Economy Principles Micro-credential courses are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
                 },
                 {
+                    "pattern": "recommend Courses to improve my skills",
+                    "response": "Energy Systems Basics, Renewable Energies, Sustainable Finance, Data Analytics for Energy, Energy-Efficient Building, Decarbonisation Tools, Energy Utilisation & Storage, Energy Transition Strategies, Social Acceptance of Tech, Circular Economy Principles Micro-credential courses are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
+                },
+                {
                     "pattern": "give me course information",
                     "response": "RES4CITY offers various micro-credential courses focused on renewable energy and sustainability. The courses cover a range of topics including energy efficiency, green technologies, and sustainable practices."
                 },
