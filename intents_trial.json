@@ -192,27 +192,35 @@
             "pairs": [
                 {
                     "pattern": "What are the payments for each course",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
                     "pattern": "How much is it for a microcredential",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                },
+                {
+                    "pattern": "Payment",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                },
+                {
+                    "pattern": "fees",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
                     "pattern": "What is the pricing for microcredential and programs?",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
                     "pattern": "How much does a microcredential cost?",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
                     "pattern": "Is there any discount available?",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                  {
                     "pattern": "How should I pay?",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 }
             ],
             "context_set": ""
