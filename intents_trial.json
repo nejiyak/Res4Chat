@@ -187,7 +187,62 @@
             ],
             "context_set": ""
         },
-       
+       {
+            "tag": "Payment",
+            "pairs": [
+                {
+                    "pattern": "What are the payments for each course",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                },
+                {
+                    "pattern": "How much is it for a microcredential",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                },
+                {
+                    "pattern": "What is the pricing for microcredential and programs?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                },
+                {
+                    "pattern": "How much does a microcredential cost?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                },
+                {
+                    "pattern": "Is there any discount available?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                },
+                 {
+                    "pattern": "How should I pay?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our suport team for commercials for further assistance."
+                }
+            ],
+            "context_set": ""
+        },
+         {
+            "tag": "Certificate",
+            "pairs": [
+                {
+                    "pattern": "How does RES4CITY ensure the quality and relevance of its courses?",
+                    "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                },
+                {
+                    "pattern": "Do you provide certificate after finishing the course?",
+                    "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                },
+                {
+                    "pattern": "Certificate",
+                    "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                },
+                {
+                    "pattern": "Course completion certificate",
+                    "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                },
+                {
+                    "pattern": "Is the certificate valid",
+                    "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                }
+            ],
+            "context_set": ""
+        },
         {
             "tag": "job_market_alignment",
             "pairs": [
