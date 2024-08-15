@@ -83,6 +83,10 @@
                     "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
                 },
                 {
+                    "pattern": "what are the courses available?",
+                    "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
+                },
+                {
                     "pattern": "courses",
                     "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
                 },
