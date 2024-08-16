@@ -1,96 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Res4Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RES4CHAT</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/Res4city_logo.png') }}" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
+        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
-        h1 {
+        header {
+            background-color: #fff;
+            padding: 10px;
             text-align: center;
-            color: #000000;
+            border-bottom: 2px solid #007BFF;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
         }
         #chatbox {
-            height: 400px;
-            width: 400px;
-            padding: 25px;
-            margin: 10px auto;
+            flex: 1;
+            padding: 20px;
+            margin: 0 auto;
             background-color: #fff;
             border-radius: 10px;
-            border: 3px solid #000000;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border: 2px solid #007BFF;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
             overflow-y: auto;
+            width: 100%;
+            max-width: 600px;
         }
         #textInput, #buttonInput {
-            width: 400px;
-            padding: 10px;
+            width: 100%;
+            max-width: 600px;
+            padding: 12px;
             margin: 10px auto;
             display: block;
-            border-radius: 10px;
-            border: 1px solid #ddd;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            font-size: 16px;
         }
         #buttonInput {
             cursor: pointer;
+            border: 1px solid #007BFF;
             background-color: #007BFF;
             color: white;
         }
         #buttonInput:hover {
             background-color: #0056b3;
         }
-        .userText {
-            color: black;
-            font-weight: bold;
-            text-align: right;
+        .userText, .botText {
+            display: flex;
+            align-items: center;
             margin: 10px;
-            padding: 10px;
-            background-color: #f0f0f0;
+            padding: 1px;
             border-radius: 10px;
         }
+        .userText {
+            justify-content: flex-end;
+            background-color: #e9ecef;
+            color: #333;
+        }
         .botText {
-            color: green;
-            font-weight: bold;
-            text-align: left;
-            margin: 15px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
+            justify-content: flex-start;
+            background-color: #e9ecef;
+            color: #333;
+        }
+        .botText img {
+            width: 35px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 15%;
+        }
+        .userText img {
+            width: 35px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <h1>Res4Chat</h1>
+    <!-- Header with the logo -->
+    <header>
+        <img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Res4City Logo">
+    </header>
+    
     <div id="chatbox">
-        <p class="botText"><span>Hi! I'm your chatbot 'Res4Chat'.</span></p>
+        <p class="botText">
+            <img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Res4City Logo">
+            <span>Hi! I'm your chatbot 'Res4Chat'.</span>
+        </p>
     </div>
-    <input id="textInput" type="text" name="msg" placeholder="Type your message here..." disabled>
-    <input id="buttonInput" type="submit" value="Send" disabled>
+    <input id="textInput" type="text" name="msg" placeholder="Type your message here...">
+    <input id="buttonInput" type="submit" value="Send">
     <script>
         var awaitingFollowUp = false;
- 
+
         function getBotResponse() {
             var rawText = $("#textInput").val();
             if (rawText.trim() === '') {
                 return;
             }
-            var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+            var userHtml = '<p class="userText"><span>' + rawText + '</span><img src="{{ url_for('static', filename='images/User_icon.png') }}" alt="User"></p>';
             $("#textInput").val("");
             $("#chatbox").append(userHtml);
             document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
-           
+
             var url = awaitingFollowUp ? '/follow_up' : '/chat';
             $.ajax({
                 type: 'POST',
                 url: url,
                 data: JSON.stringify({ message: rawText }),
                 success: function(data) {
-                    var botHtml = '<p class="botText"><span>' + data.response + '</span></p>';
+                    var botHtml = '<p class="botText"><img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Res4City Logo"><span>' + data.response + '</span></p>';
                     $("#chatbox").append(botHtml);
                     document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
- 
+
                     if (data.follow_up) {
                         awaitingFollowUp = true;
                     } else {
@@ -105,22 +146,22 @@
                 dataType: 'json'
             });
         }
- 
+
         $(document).ready(function() {
             $("#textInput").prop('disabled', false);
             $("#buttonInput").prop('disabled', false);
         });
- 
+
         $("#textInput").keypress(function(e) {
             if (e.which == 13) {
                 getBotResponse();
             }
         });
- 
+
         $("#buttonInput").click(function() {
             getBotResponse();
         });
- 
+
         $("#textInput").on('input', function() {
             if ($("#textInput").val().trim() === '') {
                 $("#buttonInput").prop('disabled', true);
