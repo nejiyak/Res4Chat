@@ -110,13 +110,23 @@
         }
 
         .userText {
-            justify-content: flex-end;
+            justify-content: flex-end; /* Align to the end for user text */
             background-color: #e9ecef;
             color: #333;
         }
 
+        .userText span {
+            margin-right: 10px; /* Space between text and icon */
+        }
+
+        .userText img {
+            width: 25px;
+            height: 25px;
+            border-radius: 0%;
+        }
+
         .botText {
-            justify-content: flex-start;
+            justify-content: flex-start; /* Align to the start for bot text */
             background-color: #e9ecef;
             color: #333;
         }
@@ -124,14 +134,7 @@
         .botText img {
             width: 30px;
             height: 30px;
-            margin-right: 10px;
-            border-radius: 0%;
-        }
-
-        .userText img {
-            width: 25px;
-            height: 25px;
-            margin-left: 10px;
+            margin-right: 10px; /* Space between image and text */
             border-radius: 0%;
         }
 
@@ -149,12 +152,40 @@
         #textInput {
             flex-grow: 1;
         }
+
+        /* Container for option buttons within the chatbox */
+        .optionsContainer {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+            gap: 10px; /* Space between option buttons */
+            margin-top: 10px;
+        }
+
+        /* Style for clickable options */
+        .optionButton {
+            background-color: #079844;
+            color: white;
+            padding: 10px 15px; /* Increased padding for better touch */
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            flex: 1 1 45%; /* Make buttons take up about half the container width */
+            max-width: 45%; /* Ensure buttons don't grow too large */
+        }
+
+        .optionButton:hover {
+            background-color: #00ab41;
+        }
+
+        .optionButton:active {
+            background-color: #007a2f;
+        }
     </style>
 </head>
 <body>
     <!-- Header with the logo -->
     <header>
-        <img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Res4City Logo">
+        <img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Res4city Logo">
     </header>
 
     <!-- Title just above the chatbox -->
@@ -170,69 +201,89 @@
 
     <!-- Input field for user message -->
     <div class="footer">
-        <input id="textInput" type="text" name="msg" placeholder="Type your message here...">
-        <input id="buttonInput" type="submit" value="Send">
+        <input id="textInput" type="text" placeholder="Type a message..." required>
+        <button id="buttonInput">Send</button>
     </div>
 
     <script>
-        var awaitingFollowUp = false;
-
-        function getBotResponse() {
-            var rawText = $("#textInput").val();
-            if (rawText.trim() === '') {
-                return;
-            }
-            var userHtml = '<p class="userText"><span>' + rawText + '</span><img src="{{ url_for('static', filename='images/User_icon.png') }}" alt="User"></p>';
-            $("#textInput").val("");
-            $("#chatbox").append(userHtml);
-            document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
-
-            var url = awaitingFollowUp ? '/follow_up' : '/chat';
-            $.ajax({
-                type: 'POST',
-                url: url,
-                data: JSON.stringify({ message: rawText }),
-                success: function(data) {
-                    var botHtml = '<p class="botText"><img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Res4City Logo"><span>' + data.response + '</span></p>';
-                    $("#chatbox").append(botHtml);
-                    document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
-
-                    if (data.follow_up) {
-                        awaitingFollowUp = true;
-                    } else {
-                        awaitingFollowUp = false;
-                        if (data.response.includes("Thank you for chatting with us! Have a great day!")) {
-                            $("#textInput").prop('disabled', true);
-                            $("#buttonInput").prop('disabled', true);
-                        }
-                    }
-                },
-                contentType: 'application/json',
-                dataType: 'json'
-            });
-        }
-
         $(document).ready(function() {
-            $("#textInput").prop('disabled', false);
-            $("#buttonInput").prop('disabled', false);
-        });
+            $("#buttonInput").click(function() {
+                let userText = $("#textInput").val();
+                if (userText.trim() !== "") {
+                    $("#chatbox").append('<div class="userText"><span>' + userText + '</span><img src="{{ url_for('static', filename='images/user_icon.png') }}" alt="User Icon"></div>');
+                    $("#textInput").val(""); // Clear the input field
 
-        $("#textInput").keypress(function(e) {
-            if (e.which == 13) {
-                getBotResponse();
-            }
-        });
+                    // Send user message to the server
+                    $.ajax({
+                        url: "/chat",
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify({ message: userText }),
+                        success: function(response) {
+                            let botText = '<div class="botText"><img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Bot Icon"><span>' + response.response + '</span></div>';
+                            $("#chatbox").append(botText);
 
-        $("#buttonInput").click(function() {
-            getBotResponse();
-        });
+                            // Add options if they exist
+                            if (response.options && response.options.length > 0) {
+                                let optionsContainer = '<div class="optionsContainer">';
+                                response.options.forEach(function(option) {
+                                    optionsContainer += '<div class="optionButton">' + option + '</div>';
+                                });
+                                optionsContainer += '</div>';
+                                $("#chatbox").append(optionsContainer);
+                            }
 
-        $("#textInput").on('input', function() {
-            if ($("#textInput").val().trim() === '') {
-                $("#buttonInput").prop('disabled', true);
-            } else {
-                $("#buttonInput").prop('disabled', false);
-            }
+                            // Ensure the latest messages are in view
+                            $("#chatbox").scrollTop($("#chatbox")[0].scrollHeight);
+                        },
+                        error: function(xhr, status, error) {
+                            console.error(error);
+                        }
+                    });
+                }
+            });
+
+            // Handling click on dynamically generated option buttons
+            $(document).on("click", ".optionButton", function() {
+                let optionText = $(this).text();
+                $("#chatbox").append('<div class="userText"><span>' + optionText + '</span><img src="{{ url_for('static', filename='images/user_icon.png') }}" alt="User Icon"></div>');
+
+                // Send the option message to the server
+                $.ajax({
+                    url: "/chat",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ message: optionText }),
+                    success: function(response) {
+                        let botText = '<div class="botText"><img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Bot Icon"><span>' + response.response + '</span></div>';
+                        $("#chatbox").append(botText);
+
+                        // Add options if they exist
+                        if (response.options && response.options.length > 0) {
+                            let optionsContainer = '<div class="optionsContainer">';
+                            response.options.forEach(function(option) {
+                                optionsContainer += '<div class="optionButton">' + option + '</div>';
+                            });
+                            optionsContainer += '</div>';
+                            $("#chatbox").append(optionsContainer);
+                        }
+
+                        // Ensure the latest messages are in view
+                        $("#chatbox").scrollTop($("#chatbox")[0].scrollHeight);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            });
+
+            // Send message on enter key
+            $("#textInput").keypress(function(event) {
+                if (event.which == 13) {
+                    $("#buttonInput").click();
+                    event.preventDefault();
+                }
+            });
         });
     </script>
 </body>
