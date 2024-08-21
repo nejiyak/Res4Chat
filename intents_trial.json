@@ -110,9 +110,25 @@
                     "pattern": "Res4City",
                     "response": "RES4CITY offers various micro-credential courses focused on renewable energy and sustainability. The courses cover a range of topics including energy efficiency, green technologies, and sustainable practices."
                 },
+                 {
+                    "pattern": "I want to know about Res4City",
+                    "response": "RES4CITY offers various micro-credential courses focused on renewable energy and sustainability. The courses cover a range of topics including energy efficiency, green technologies, and sustainable practices."
+                },
                 {
                     "pattern": "Benefits of Res4City course",
                     "response": "RES4CITY courses help you develop expertise in sustainable energy and decarbonization, boost your resume with recognized credentials, offer networking opportunities with industry professionals, and provide engaging learning through interactive tools like MOOCs and serious games. How can I assist you further?"
+                },
+                {
+                    "pattern": "Outcomes of Res4City course",
+                    "response": "RES4CITY courses help you develop expertise in sustainable energy and decarbonization, boost your resume with recognized credentials, offer networking opportunities with industry professionals, and provide engaging learning through interactive tools like MOOCs and serious games. How can I assist you further?"
+                },
+                {
+                    "pattern": "what does Res4Chat do",
+                    "response": "Your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
+                },
+                {
+                    "pattern": "Who are you?",
+                    "response": "I'm Res4Chat, your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
                 },
                 {
                     "pattern": "Res4Chat",
@@ -189,12 +205,28 @@
                     "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
                 },
                 {
+                    "pattern": "Can I enroll in multiple courses ?",
+                    "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
+                },
+                {
                     "pattern": "What is the enrollment process?",
                     "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
                 },
                 {
                     "pattern": "Can you guide me through the registration?",
                     "response": "Certainly! Here’s a guide to register for a course: \n1. Go to the <a href='https://www.res4city.eu/self-assessment/'>self-assessment</a>, review the suggested courses and click on the enrollment link provided for each course. \n2. If you need step-by-step assistance, feel free to reach out to RES4CITY's support team."
+                },
+                {
+                    "pattern": "Contact details",
+                    "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
+                },
+                 {
+                    "pattern": "Faculty details",
+                    "response": "The RES4CITY project involves a diverse group of faculty members from various academic and industry backgrounds. This collaboration ensures that the courses are both practical and cutting-edge. "
+                },
+                 {
+                    "pattern": "Duration of the course",
+                    "response": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from a few weeks to a few months."
                 },
                 {
                     "pattern": "registration?",
@@ -219,7 +251,18 @@
                     "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
+                    "pattern": "Whether this course is paid ?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                },
+                {
+                    "pattern": "Are these courses paid ?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                },
+                {
                     "pattern": "fees",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                }, {
+                    "pattern": "Is this course free ?",
                     "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
@@ -246,6 +289,10 @@
             "pairs": [
                 {
                     "pattern": "How does RES4CITY ensure the quality and relevance of its courses?",
+                    "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                },
+                 {
+                    "pattern": "What will I get after successful completion of the course?",
                     "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
                 },
                 {
