@@ -36,6 +36,14 @@
                     "response": "I'm good, hope the same from you!"
                 },
                 {
+                    "pattern": "Who are you?",
+                    "response": "I'm Res4Chat, your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
+                },
+                {
+                    "pattern": "Who you?",
+                    "response": "I'm Res4Chat, your go-to chatbot for exploring sustainable energy and career opportunities. \nWhether you’re a professional, student, or enthusiast, RES4Chat offers: Info on micro-credentials and courses from RES4CITY (sustainable energy, decarbonization, social innovation)Job assistance (resume building, interview prep, networking). \nHow can I assist you further?"
+                },
+                {
                     "pattern": "Is anyone there?",
                     "response": "Hello! I'm ResChat. How can I assist you?"
                 },
@@ -76,6 +84,10 @@
                 },
                 {
                     "pattern": "Give me details about the courses offered",
+                    "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
+                },
+                {
+                    "pattern": "Course Details",
                     "response": "We offer courses in - 'Sustainable Energy Technologies and Strategies in Urban Environment', 'Decarbonization Strategies and Social Innovation for Cities and Communities','Advanced Design of Sustainable Cities','Business Strategies for a Sustainable Urban Transition','Sustainability by Design: Developing a Resilient Built Environment','Innovation in the Urban Energy Sector: Strategies & Management."
                 },
                 {
