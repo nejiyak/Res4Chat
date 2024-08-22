@@ -50,6 +50,31 @@ def get_response(user_message):
                 "Contact Us"
             ]
             return {"response": response, "options": options}, False
+        
+        # Special handling for "Courses Offered" and related options
+        elif user_message.lower() == "courses offered":
+            courses = [
+                "Sustainable Energy Technologies and Strategies in Urban Environment",
+                "Decarbonization Strategies and Social Innovation for Cities and Communities",
+                "Advanced Design of Sustainable Cities",
+                "Business Strategies for a Sustainable Urban Transition",
+                "Sustainability by Design: Developing a Resilient Built Environment",
+                "Innovation in the Urban Energy Sector: Strategies & Management"
+            ]
+            return {"response": "Here are the courses offered:", "options": courses}, False
+        
+        elif any(course.lower() in user_message.lower() for course in ["Sustainable Energy Technologies and Strategies in Urban Environment", "Decarbonization Strategies and Social Innovation for Cities and Communities", "Advanced Design of Sustainable Cities","Business Strategies for a Sustainable Urban Transition", "Sustainability by Design: Developing a Resilient Built Environment", "Innovation in the Urban Energy Sector: Strategies & Management"]):
+            course_details = {
+                "Sustainable Energy Technologies and Strategies in Urban Environment": "This programme covers renewable energy systems, energy efficiency, and sustainable urban planning. It equips you with the skills needed to design, implement, and manage sustainable energy solutions.",
+                "Decarbonization Strategies and Social Innovation for Cities and Communities": "The programme focuses on strategies to reduce carbon emissions and promote social innovation. You will learn about policy development, community engagement, and sustainable urban planning.",
+                "Advanced Design of Sustainable Cities": "This programme teaches you how to create urban spaces that are environmentally sustainable and socially inclusive. You'll learn about urban design principles, sustainable architecture, and green infrastructure.",
+                "Business Strategies for a Sustainable Urban Transition": "This programme focuses on integrating sustainability into business practices. You will learn about sustainable business models, corporate social responsibility, and green marketing.",
+                "Sustainability by Design: Developing a Resilient Built Environment": "The programme focuses on creating buildings and infrastructure that can withstand environmental challenges. You will learn about resilient design principles, sustainable construction practices, and disaster risk reduction.",
+                "Innovation in the Urban Energy Sector: Strategies & Management": "The programme teaches you how to develop and manage innovative energy solutions for urban areas. You'll learn about energy management systems, renewable energy integration, and smart grid technologies.",
+            }
+            course_name = next(course for course in course_details if course.lower() in user_message.lower())
+            return {"response": course_details[course_name]}, False
+        
         else:
             return {"response": response}, False
     else:
