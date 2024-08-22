@@ -572,7 +572,15 @@
                     "response": "The 'Sustainable Energy Technologies and Strategies in Urban Environment' programme covers renewable energy systems, energy efficiency, and sustainable urban planning. It equips you with the skills needed to design, implement, and manage sustainable energy solutions."
                 },
                 {
+                    "pattern": "Tell me more about the Sustainable Energy Technologies and Strategies in Urban Environment",
+                    "response": "The 'Sustainable Energy Technologies and Strategies in Urban Environment' programme covers renewable energy systems, energy efficiency, and sustainable urban planning. It equips you with the skills needed to design, implement, and manage sustainable energy solutions."
+                },
+                {
                     "pattern": "What will I learn in the Sustainable Energy Technologies course?",
+                    "response": "In this course, you will learn about different types of renewable energy technologies, energy policy, and how to integrate sustainable energy solutions into urban environments."
+                },
+                 {
+                    "pattern": "Benefits of Sustainable Energy Technologies course",
                     "response": "In this course, you will learn about different types of renewable energy technologies, energy policy, and how to integrate sustainable energy solutions into urban environments."
                 },
                 {
