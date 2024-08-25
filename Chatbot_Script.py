@@ -105,7 +105,7 @@ def get_response(user_message, user_id):
         response = str(best_match['response']).strip()
 
         # Check if the response is for a greeting
-        if best_match['pattern'].lower() in ["hi", "hello", "hey", "helo", "good day", "is anyone there"]:
+        if best_match['pattern'].lower() in ["hi", "hello", "hey", "helo", "good day", "is anyone there", "Hello madam", "hello Sir", "hi madam", "hi Sir", "Sir", "madam", "hei"]:
             options = [
                 "Tell me about micro-credential courses",
                 "Res4City ?",
