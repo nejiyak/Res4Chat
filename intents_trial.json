@@ -293,8 +293,13 @@
                 {
                     "pattern": "fees",
                     "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
-                }, {
+                }, 
+                {
                     "pattern": "Is this course free ?",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                },
+                {
+                    "pattern": "price",
                     "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
