@@ -236,6 +236,14 @@
                     "pattern": "Contact details",
                     "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
                 },
+                {
+                    "pattern": "Assistance",
+                    "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
+                },
+                {
+                    "pattern": "Queries",
+                    "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
+                },
                  {
                     "pattern": "Faculty details",
                     "response": "The RES4CITY project involves a diverse group of faculty members from various academic and industry backgrounds. This collaboration ensures that the courses are both practical and cutting-edge. "
