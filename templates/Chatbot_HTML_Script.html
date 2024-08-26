@@ -207,22 +207,29 @@
 
     <script>
         $(document).ready(function() {
+            let chatClosed = false;
+    
+            function appendMessage(className, text, imgSrc) {
+                $("#chatbox").append('<div class="' + className + '"><img src="' + imgSrc + '" alt="Icon"><span>' + text + '</span></div>');
+            }
+    
             $("#buttonInput").click(function() {
+                if (chatClosed) return; // Prevent sending if chat is closed
+    
                 let userText = $("#textInput").val();
                 if (userText.trim() !== "") {
-                    $("#chatbox").append('<div class="userText"><span>' + userText + '</span><img src="{{ url_for('static', filename='images/user_icon.png') }}" alt="User Icon"></div>');
+                    appendMessage('userText', userText, '{{ url_for("static", filename="images/user_icon.png") }}');
                     $("#textInput").val(""); // Clear the input field
-
+    
                     // Send user message to the server
                     $.ajax({
                         url: "/chat",
                         type: "POST",
                         contentType: "application/json",
-                        data: JSON.stringify({ message: userText }),
+                        data: JSON.stringify({ message: userText, user_id: 'some_unique_user_id' }), // Ensure user_id is passed
                         success: function(response) {
-                            let botText = '<div class="botText"><img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Bot Icon"><span>' + response.response + '</span></div>';
-                            $("#chatbox").append(botText);
-
+                            appendMessage('botText', response.response, '{{ url_for("static", filename="images/Res4city_logo.png") }}');
+    
                             // Add options if they exist
                             if (response.options && response.options.length > 0) {
                                 let optionsContainer = '<div class="optionsContainer">';
@@ -232,7 +239,14 @@
                                 optionsContainer += '</div>';
                                 $("#chatbox").append(optionsContainer);
                             }
-
+    
+                            // Disable chat if response indicates closure
+                            if (response.chat_closed) {
+                                chatClosed = true;
+                                $("#textInput").hide(); // Hide the text input field
+                                $("#buttonInput").hide(); // Hide the send button
+                            }
+    
                             // Ensure the latest messages are in view
                             $("#chatbox").scrollTop($("#chatbox")[0].scrollHeight);
                         },
@@ -242,22 +256,23 @@
                     });
                 }
             });
-
+    
             // Handling click on dynamically generated option buttons
             $(document).on("click", ".optionButton", function() {
+                if (chatClosed) return; // Prevent clicking if chat is closed
+    
                 let optionText = $(this).text();
-                $("#chatbox").append('<div class="userText"><span>' + optionText + '</span><img src="{{ url_for('static', filename='images/user_icon.png') }}" alt="User Icon"></div>');
-
+                appendMessage('userText', optionText, '{{ url_for("static", filename="images/user_icon.png") }}');
+    
                 // Send the option message to the server
                 $.ajax({
                     url: "/chat",
                     type: "POST",
                     contentType: "application/json",
-                    data: JSON.stringify({ message: optionText }),
+                    data: JSON.stringify({ message: optionText, user_id: 'some_unique_user_id' }), // Ensure user_id is passed
                     success: function(response) {
-                        let botText = '<div class="botText"><img src="{{ url_for('static', filename='images/Res4city_logo.png') }}" alt="Bot Icon"><span>' + response.response + '</span></div>';
-                        $("#chatbox").append(botText);
-
+                        appendMessage('botText', response.response, '{{ url_for("static", filename="images/Res4city_logo.png") }}');
+    
                         // Add options if they exist
                         if (response.options && response.options.length > 0) {
                             let optionsContainer = '<div class="optionsContainer">';
@@ -267,7 +282,14 @@
                             optionsContainer += '</div>';
                             $("#chatbox").append(optionsContainer);
                         }
-
+    
+                        // Disable chat if response indicates closure
+                        if (response.chat_closed) {
+                            chatClosed = true;
+                            $("#textInput").hide(); // Hide the text input field
+                            $("#buttonInput").hide(); // Hide the send button
+                        }
+    
                         // Ensure the latest messages are in view
                         $("#chatbox").scrollTop($("#chatbox")[0].scrollHeight);
                     },
@@ -276,7 +298,7 @@
                     }
                 });
             });
-
+    
             // Send message on enter key
             $("#textInput").keypress(function(event) {
                 if (event.which == 13) {
@@ -285,6 +307,6 @@
                 }
             });
         });
-    </script>
+    </script>    
 </body>
 </html>
