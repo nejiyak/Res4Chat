@@ -75,12 +75,12 @@
                 },
                 {
                     "pattern": "Skills",
-                    "response": "Energy Systems Basics, Renewable Energies, Sustainable Finance, Data Analytics for Energy, Energy-Efficient Building, Decarbonisation Tools, Energy Utilisation & Storage, Energy Transition Strategies, Social Acceptance of Tech, Circular Economy Principles."
+                    "response": "You can gain skills in Energy Systems Basics, Renewable Energies, Sustainable Finance, Data Analytics for Energy, Energy-Efficient Building, Decarbonisation Tools, Energy Utilisation & Storage, Energy Transition Strategies, Social Acceptance of Tech, Circular Economy Principles."
                 },
                
                 {
                     "pattern": "What are micro-credentials?",
-                    "response": "Micro-credentials are short, focused programs designed to help you gain specific skills. We offer courses based on sustainability."
+                    "response": "A micro-credential is a short, focused course that teaches specific skills related to sustainability and renewable energy. At RES4CITY, our micro-credentials help you quickly gain expertise in areas like sustainable energy technologies and urban design, allowing you to earn certifications that are recognized by employers in the industry."
                 },
                 {
                     "pattern": "Give me details about the courses offered",
@@ -175,6 +175,30 @@
                 {
                     "pattern": "Which course is best?",
                     "response": "To choose the right course, consider your current skill level, career aspirations, and the specific needs of the job market in your area. The self-assessment tool on the RES4CITY <a href='https://www.res4city.eu/self-assessment/'>website</a> can assist you in making this decision by matching your profile with the most suitable micro-credentials or micro-programs."
+                },
+                {
+                    "pattern": "course is live or recorded?",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
+                    "pattern": "live session",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
+                    "pattern": "recorded",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
+                    "pattern": "live",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
+                    "pattern": "is the course live session",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
+                    "pattern": "is the course recorded session",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
                 }
             ],
             "context_set": ""
@@ -237,6 +261,10 @@
                     "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
                 },
                 {
+                    "pattern": "Support",
+                    "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
+                },
+                {
                     "pattern": "Assistance",
                     "response": "If you need further assistance, kindly send a mail to res4city@gmail.com or feel free to reach out to our RES4CITY's support team."
                 },
@@ -293,13 +321,13 @@
                 {
                     "pattern": "fees",
                     "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
-                }, 
-                {
-                    "pattern": "Is this course free ?",
-                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
                     "pattern": "price",
+                    "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
+                },
+                 {
+                    "pattern": "Is this course free ?",
                     "response": "For pricing and plans kindly send a mail to res4city@gmail.com or you can contact our support team for commercials for further assistance."
                 },
                 {
@@ -347,7 +375,40 @@
                 {
                     "pattern": "Is the certificate valid",
                     "response": "Res4city provides certificates that are recognized and valued across different sectors involved in renewable energy and fuel technologies. Additionally, the project is funded by the European Union, which adds a layer of credibility and approval to the microcredentials."
+                },
+                {
+                    "pattern": "Exam Details",
+                    "response": "RES4CITY courses include various assessments throughout the course to gauge understanding and skills. Additionally, each course concludes with a final assessment to test the knowledge gained."
+                },
+                {
+                    "pattern": "Is there Exam",
+                    "response": "RES4CITY courses include various assessments throughout the course to gauge understanding and skills. Additionally, each course concludes with a final assessment to test the knowledge gained."
+                },
+                {
+                    "pattern": "Exam",
+                    "response": "RES4CITY courses include various assessments throughout the course to gauge understanding and skills. Additionally, each course concludes with a final assessment to test the knowledge gained."
+                },
+                {
+                    "pattern": "Final Assessment",
+                    "response": "RES4CITY courses include various assessments throughout the course to gauge understanding and skills. Additionally, each course concludes with a final assessment to test the knowledge gained."
+                },
+                {
+                    "pattern": "Assessment",
+                    "response": "RES4CITY courses include various assessments throughout the course to gauge understanding and skills. Additionally, each course concludes with a final assessment to test the knowledge gained."
+                },
+                {
+                    "pattern": "Scholarship",
+                    "response": "Currently, there is no specific information available about scholarships for the RES4CITY courses. If you’re interested in financial support, I recommend checking the <a href='https://www.res4city.eu/'>RES4CITY</a> website regularly for updates. Also, you can contact our support team or mail to res4city@gmail.com for further updates."
+                },
+                {
+                    "pattern": "Funding",
+                    "response": "Currently, there is no specific information available about scholarships for the RES4CITY courses. If you’re interested in financial support, I recommend checking the <a href='https://www.res4city.eu/'>RES4CITY</a> website regularly for updates. Also, you can contact our support team or mail to res4city@gmail.com for further updates."
+                },
+                {
+                    "pattern": "Financial",
+                    "response": "Currently, there is no specific information available about scholarships for the RES4CITY courses. If you’re interested in financial support, I recommend checking the <a href='https://www.res4city.eu/'>RES4CITY</a> website regularly for updates. Also, you can contact our support team or mail to res4city@gmail.com for further updates."
                 }
+
             ],
             "context_set": ""
         },
