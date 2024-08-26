@@ -197,6 +197,14 @@
                     "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
                 },
                 {
+                    "pattern": "is this course live",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
+                    "pattern": "are these course live?",
+                    "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
+                },
+                {
                     "pattern": "is the course recorded session",
                     "response": "RES4CITY courses are offered through a MOOC platform, which typically means they are recorded and available for self-paced learning. This allows flexibility for students and professionals to complete the courses at their own pace."
                 }
