@@ -71,7 +71,7 @@ def get_response(user_message, user_id):
 
     # Handle special options for sub-options
     sub_options = ["Course Content", "Job Opportunities", "Skills Acquired", "Course Duration", "How to Enroll"]
-    
+
     # Check if the user's message matches any of the sub-options
     if user_message.lower() in [opt.lower() for opt in sub_options]:
         if user_states[user_id]["selected_course"]:
@@ -137,7 +137,6 @@ def get_response(user_message, user_id):
     else:
         return {"response": "Sorry, I'm not sure about that, but I'm here to help with anything else! For more details please visit our website: <a href='https://www.res4city.eu/'>Res4City</a>."}, False
 
-
 @app.route('/')
 def home():
     return render_template('Chatbot_HTML_Script.html')
@@ -146,33 +145,33 @@ def home():
 def chat():
     user_message = request.json.get('message')
     user_id = request.json.get('user_id')  # Ensure you pass user_id from the frontend
+
     if not user_message.strip():
         return jsonify({'error': 'Please enter a message.'}), 400
     
+    # Handle follow-up cases
+    if user_id in user_states and user_states[user_id].get('awaiting_follow_up'):
+        if user_message.lower() in ["no","nothing"]:
+            final_message = "Thank you for chatting with us! Have a great day!"
+            user_states.pop(user_id, None)  # Clear the user state
+            return jsonify({'response': final_message, 'options': [], 'chat_closed': True})  # Signal chat close
+        elif user_message.lower() == "yes":
+            continue_message = "Great! What else can I help you with?"
+            user_states[user_id]['awaiting_follow_up'] = False  # Reset follow-up state
+            return jsonify({'response': continue_message, 'options': [], 'chat_closed': False})  # Continue
+        else:
+            response_data, _ = get_response(user_message, user_id)
+            return jsonify({'response': response_data.get('response'), 'options': response_data.get('options', []), 'chat_closed': False})
+
     response_data, is_error = get_response(user_message, user_id)
-   
+
+    # Determine follow-up need based on user response
     if is_error or user_message.lower() in ["ok", "thanks", "thank you", "thank u", "bye", "bi"]:
+        user_states[user_id]['awaiting_follow_up'] = True
         follow_up = "Is there anything else I can help you with?"
-        return jsonify({'response': follow_up, 'follow_up': True, 'options': []})  # Empty options to keep the current ones
-   
-    return jsonify({'response': response_data.get('response'), 'options': response_data.get('options', []), 'follow_up': False})
+        return jsonify({'response': follow_up, 'follow_up': True, 'options': [], 'chat_closed': False})
 
-@app.route('/follow_up', methods=['POST'])
-def follow_up():
-    user_message = request.json.get('message')
-    user_id = request.json.get('user_id')  # Ensure you pass user_id from the frontend
-    if not user_message.strip():
-        return jsonify({'error': 'Please enter a message.'}), 400
-
-    if user_message.lower() in ["no"]:
-        final_message = "Thank you for chatting with us! Have a great day!"
-        return jsonify({'response': final_message, 'options': []})  # No options on exit
-    elif user_message.lower() == "yes":
-        continue_message = "Great! What else can I help you with?"
-        return jsonify({'response': continue_message, 'options': []})  # Continue with no new options
-   
-    response, _ = get_response(user_message, user_id)
-    return jsonify({'response': response, 'options': []})
+    return jsonify({'response': response_data.get('response'), 'options': response_data.get('options', []), 'chat_closed': False})
 
 if __name__ == '__main__':
     app.run(debug=True)
