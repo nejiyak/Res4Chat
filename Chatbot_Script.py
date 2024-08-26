@@ -26,46 +26,46 @@ def get_response(user_message, user_id):
     # Define course details
     course_details = {
         "Sustainable Energy Technologies and Strategies in Urban Environment": {
-            "Course Content": "This course includes modules on solar and wind energy technologies, energy storage systems, and strategies for reducing urban energy consumption.",
+            "Course Content": "The 'Sustainable Energy Technologies and Strategies in Urban Environment' programme covers renewable energy systems, energy efficiency, and sustainable urban planning. It equips you with the skills needed to design, implement, and manage sustainable energy solutions.",
             "Job Opportunities": "Completing this programme can open up career opportunities as a Renewable Energy Engineer, Energy Consultant, or Sustainable Energy Manager.",
-            "Skills Acquired": "Skills in sustainable energy, urban planning, and policy implementation.",
+            "Skills Acquired": "Learners will gain skills in understanding and implementing various renewable energy sources, such as solar and wind, and learn about energy storage solutions and grid integration for sustainable energy systems.",
             "Course Duration": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from 15 hrs per week for 5 weeks.", 
-            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- Boost My Skills Website <a href='https://res4city.boostmyskills.eu/programs/'>website</a> and begin your enrollment process."
+            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- <a href='https://res4city.boostmyskills.eu/programs/'>Boost My Skills</a> website and begin your enrollment process."
         },
             "Decarbonization Strategies and Social Innovation for Cities and Communities": {
-            "Course Content": "This course covers topics such as climate change mitigation, renewable energy integration, and social innovation techniques.",
+            "Course Content": "This course focuses on strategies to reduce carbon emissions across various sectors, such as transportation, industry, and urban development. Key topics include carbon capture and storage (CCS), transitioning to low-carbon energy sources, policy development for emission reductions, and innovative technologies for decarbonization. The course also emphasizes the role of public awareness, corporate responsibility, and government regulations in achieving net-zero carbon goals. Students will engage in projects that model emission reduction scenarios and evaluate their effectiveness.",
             "Job Opportunities": "Career opportunities include roles such as Sustainability Coordinator, Environmental Policy Advisor, and Urban Planner.",
-            "Skills Acquired": "Skills in policy development, community engagement, and sustainability planning.",
+            "Skills Acquired": "This course equips students with the ability to develop and implement strategies to reduce carbon emissions, including knowledge of carbon capture technologies and understanding policy frameworks for low-carbon transitions.",
             "Course Duration": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from 15 hrs per week for 5 weeks.", 
-            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- Boost My Skills Website <a href='https://res4city.boostmyskills.eu/programs/'>website</a> and begin your enrollment process."
+            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- <a href='https://res4city.boostmyskills.eu/programs/'>Boost My Skills</a> website and begin your enrollment process."
         },
         "Advanced Design of Sustainable Cities": {
-            "Course Content": "The course includes modules on sustainable urban planning, landscape architecture, and the use of green technologies in city design.",
+            "Course Content": "This course explores the principles of sustainable urban planning and design, focusing on creating cities that are environmentally friendly, economically viable, and socially inclusive. Topics include green building practices, sustainable transportation systems, waste management, and urban green spaces. Students will study successful examples of sustainable cities worldwide, learning how to apply these principles to new and existing urban areas. The course includes workshops on using design software and GIS tools to create sustainable city models.",
             "Job Opportunities": "Career opportunities include roles such as Urban Designer, City Planner, and Sustainability Consultant.",
-            "Skills Acquired": "Skills in urban design principles, sustainable architecture, and green infrastructure.",
+            "Skills Acquired": "Participants will acquire skills in sustainable urban planning, green building design, and managing energy-efficient infrastructure, as well as using tools like GIS for city planning.",
             "Course Duration": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from 15 hrs per week for 5 weeks.", 
-            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- Boost My Skills Website <a href='https://res4city.boostmyskills.eu/programs/'>website</a> and begin your enrollment process."
+            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- <a href='https://res4city.boostmyskills.eu/programs/'>Boost My Skills</a> website and begin your enrollment process."
         },
         "Business Strategies for a Sustainable Urban Transition": {
-            "Course Content": "This course covers topics such as sustainable supply chain management, environmental risk assessment, and stakeholder engagement.",
+            "Course Content": "This course is designed for business professionals and policymakers, covering strategies to integrate sustainability into business practices and urban development. It includes topics such as sustainable business models, corporate social responsibility (CSR), green finance, and stakeholder engagement. The course also covers regulatory frameworks, market-based mechanisms (like carbon trading), and innovation in sustainability. Participants will analyze case studies of businesses and cities that have successfully implemented sustainable practices.",
             "Job Opportunities": "Career opportunities include roles such as Sustainable Business Consultant, Corporate Sustainability Manager, and Green Business Advisor.",
-            "Skills Acquired": "Skills in sustainable business models, corporate social responsibility, and green marketing.",
+            "Skills Acquired": "This course focuses on optimizing energy use through energy audits, smart grid technologies, and integrating renewable energy sources into existing systems for greater efficiency.",
             "Course Duration": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from 15 hrs per week for 5 weeks.", 
-            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- Boost My Skills Website <a href='https://res4city.boostmyskills.eu/programs/'>website</a> and begin your enrollment process."
+            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- <a href='https://res4city.boostmyskills.eu/programs/'>Boost My Skills</a> website and begin your enrollment process."
         },
         "Sustainability by Design- Developing a Resilient Built Environment": {
-            "Course Content": "This course includes modules on climate-resilient architecture, green building standards, and adaptive reuse of existing structures.",
+            "Course Content": "Focused on optimizing energy use and integrating renewable energy systems into existing infrastructure, this course covers the latest technologies in energy efficiency and management. It includes modules on energy auditing, smart grid technologies, demand-side management, and energy storage solutions. Students will learn how to design and implement systems that minimize energy loss, improve energy efficiency, and reduce overall energy consumption.",
             "Job Opportunities": "Career opportunities include roles such as Resilient Design Architect, Sustainable Building Consultant, and Disaster Risk Reduction Specialist.",
             "Skills Acquired": "Skills in resilient design, sustainable construction, and disaster risk reduction.",
             "Course Duration": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from 15 hrs per week for 5 weeks.", 
-            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- Boost My Skills Website <a href='https://res4city.boostmyskills.eu/programs/'>website</a> and begin your enrollment process."
+            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- <a href='https://res4city.boostmyskills.eu/programs/'>Boost My Skills</a> website and begin your enrollment process."
         },
         "Innovation in the Urban Energy Sector- Strategies And Management": {
-            "Course Content": "Modules include smart grid technology, renewable energy project management, and strategies for enhancing energy efficiency in urban environments.",
+            "Course Content": "This course focuses on innovative strategies and management techniques that can be applied to the urban energy sector to enhance sustainability and efficiency. Key topics include the integration of renewable energy sources into urban environments, smart grid technologies, and the development of energy-efficient buildings. The course covers emerging technologies such as energy storage solutions, electric vehicle (EV) infrastructure, and urban microgrids. ",
             "Job Opportunities": "Career opportunities include roles such as Energy Innovation Manager, Urban Energy Planner, and Renewable Energy Project Leader.",
-            "Skills Acquired": "Skills in smart grid technology, renewable energy management, and energy efficiency strategies.",
+            "Skills Acquired": "Learners will gain skills in integrating renewable energy into urban settings, developing smart grid and microgrid solutions, and managing urban energy projects while promoting stakeholder engagement and policy development.",
             "Course Duration": "The duration of the RES4CITY courses varies depending on the specific microcredential or program you choose. Generally, these courses are designed to be flexible and can range from 15 hrs per week for 5 weeks.", 
-            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- Boost My Skills Website <a href='https://res4city.boostmyskills.eu/programs/'>website</a> and begin your enrollment process."
+            "How to Enroll": "To enroll this course, kindly visit the RES4CITY- <a href='https://res4city.boostmyskills.eu/programs/'>Boost My Skills</a> website and begin your enrollment process."
         }
     }
 
@@ -105,7 +105,7 @@ def get_response(user_message, user_id):
         response = str(best_match['response']).strip()
 
         # Check if the response is for a greeting
-        if best_match['pattern'].lower() in ["hi", "hello", "hey", "helo", "good day", "is anyone there", "Hello madam", "hello Sir", "hi madam", "hi Sir", "Sir", "madam", "hei"]:
+        if best_match['pattern'].lower() in ["hi", "hello", "hey", "helo", "good day", "is anyone there", "Hello madam", "hello Sir", "hi madam", "hi Sir", "Sir", "madam", "hei", "sorry"]:
             options = [
                 "Tell me about micro-credential courses",
                 "Res4City ?",
