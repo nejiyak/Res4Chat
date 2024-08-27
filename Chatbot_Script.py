@@ -11,6 +11,10 @@ user_states = {}
 # Set a TTL for user sessions (e.g., 15 minutes)
 USER_SESSION_TTL = 15 * 60  # 15 minutes in seconds
 
+# Load the intents JSON file once during app initialization
+with open('intents_trial.json', 'r', encoding='utf-8') as file:
+    intents_data = json.load(file)
+
 def sanitize_input(input_text):
     """Sanitize user input by removing special characters and check if input is valid."""
     sanitized = re.sub(r'[^a-zA-Z0-9\s-]', '', input_text)
@@ -22,9 +26,18 @@ def get_response(user_message, user_id):
     if not user_message:
         return {"response": "Sorry, I can't understand messages with only special characters. Please try again with some text."}, False
 
-    # Initialize user state if not already present
+    # Clean up old user states
+    current_time = time()
+    user_states_copy = user_states.copy()
+    for uid, state in user_states_copy.items():
+        if current_time - state.get('timestamp', current_time) > USER_SESSION_TTL:
+            user_states.pop(uid, None)
+
+    # Initialize or update user state
     if user_id not in user_states:
-        user_states[user_id] = {"selected_course": None, "current_query": None}
+        user_states[user_id] = {"selected_course": None, "current_query": None, "timestamp": current_time}
+    else:
+        user_states[user_id]['timestamp'] = current_time  # Update timestamp
 
     # Define course details
     course_details = {
@@ -80,7 +93,7 @@ def get_response(user_message, user_id):
         if user_states[user_id]["selected_course"]:
             course_name = user_states[user_id]["selected_course"]
             course_option = next(opt for opt in sub_options if opt.lower() == user_message.lower())
-            
+
             if course_name in course_details and course_option in course_details[course_name]:
                 response = course_details[course_name][course_option]
                 return {"response": response}, False
@@ -88,14 +101,10 @@ def get_response(user_message, user_id):
                 response = "Sorry, I don't have details for that option."
                 return {"response": response}, False
 
-    # Load intents data
-    with open('intents_trial.json', 'r', encoding='utf-8') as file:
-        data = json.load(file)
-
     max_similarity = -1
     best_match = None
 
-    for intent in data['intents']:
+    for intent in intents_data['intents']:
         for pair in intent['pairs']:
             pattern = pair['pattern']
             response = pair['response']
@@ -108,7 +117,7 @@ def get_response(user_message, user_id):
         response = str(best_match['response']).strip()
 
         # Check if the response is for a greeting
-        if best_match['pattern'].lower() in ["hi", "hello", "hey", "helo", "good day", "is anyone there", "Hello madam", "hello Sir", "hi madam", "hi Sir", "Sir", "madam", "hei", "sorry"]:
+        if best_match['pattern'].lower() in ["hi", "hello", "hey", "helo", "good day", "is anyone there", "hello madam", "hello sir", "hi madam", "hi sir", "sir", "madam", "hei", "sorry"]:
             options = [
                 "Tell me about micro-credential courses",
                 "Res4City ?",
@@ -154,7 +163,7 @@ def chat():
     
     # Handle follow-up cases
     if user_id in user_states and user_states[user_id].get('awaiting_follow_up'):
-        if user_message.lower() in ["no","nothing"]:
+        if user_message.lower() in ["no", "nothing"]:
             final_message = "Thank you for chatting with us! Have a great day!"
             user_states.pop(user_id, None)  # Clear the user state
             return jsonify({'response': final_message, 'options': [], 'chat_closed': True})  # Signal chat close
@@ -177,4 +186,4 @@ def chat():
     return jsonify({'response': response_data.get('response'), 'options': response_data.get('options', []), 'chat_closed': False})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
