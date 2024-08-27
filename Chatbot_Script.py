@@ -2,11 +2,14 @@ from flask import Flask, render_template, request, jsonify
 import json
 from fuzzywuzzy import fuzz
 import re
+from time import time
 
 app = Flask(__name__)
 
 # Dictionary to keep track of user state
 user_states = {}
+# Set a TTL for user sessions (e.g., 15 minutes)
+USER_SESSION_TTL = 15 * 60  # 15 minutes in seconds
 
 def sanitize_input(input_text):
     """Sanitize user input by removing special characters and check if input is valid."""
